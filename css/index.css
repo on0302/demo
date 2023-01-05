@@ -1,0 +1,404 @@
+body{
+    /* font-family: "Yu Mincho", "游明朝"; */
+    font-family: "Meiryo", "メイリオ";
+    /* background-color: #be3455; */
+    background-color: rgba(190, 52, 84, 0.5);
+}
+
+.logTitle{
+    display: inline-flex;
+    float: left;
+    margin-left: 2%;
+}
+
+/* ロゴ */
+#logImg{
+    margin-top: -3%;
+    width: 10%;
+}
+
+/* タイトル */
+#titleText p{
+    margin-left: 3%;
+    font-weight: bold;
+    font-size: 200%;
+    padding-top: 0%;
+    width: fit-content;
+}
+
+#titleText p span{
+    color: #be3455;
+}
+
+#titleText{
+    text-decoration: none;
+    color: black;
+    width: fit-content;
+}
+
+
+/* ナビゲーション */
+
+#header{
+    padding: 1% 0;
+	height: 8%;/*高さ指定*/
+	width:100%;/*横幅指定*/
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*JSを使いfixedクラスが付与された際の設定*/
+#header.fixed{
+    padding: 1% 0;
+    position: fixed;/*fixedを設定して固定*/
+    z-index: 999;/*最前面へ*/
+    top:0;/*位置指定*/
+    left:0;/*位置指定*/
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#navList{
+    display: flex;
+    list-style: none;
+    margin-left: 70vw; 
+}
+
+#navList li{
+    font-weight: bold;
+    padding: 1% 0;
+}
+
+#navList a{
+    margin: 0 20px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+#navList li a{
+    position: relative;
+}
+
+#navList li#now .navText, #navList li .navText:hover{
+    color: #0481A2;
+}
+
+#navList li .navText::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /*線になる丸の形状*/
+    width: 100%;
+    height: 5px;
+    border-radius: 50%;
+    background:#0481A2;
+    transition: all .3s;
+    transform: scale(0.04, 1);/*X方向0.04、Y方向1*/
+    transform-origin: center bottom;/*中央下部基点*/
+}
+
+#navList li#now .navText::after, #navList li .navText:hover::after {
+    height: 2px;
+    border-radius: 0;/*丸みをなくす*/    
+    transform: scale(1, 1);/*X方向1、Y方向1にスケール拡大*/
+}
+
+/* ダウンロード */
+#downUrl{
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 9999px;
+    width: 20%;
+}
+
+#downUrl li{
+    border-radius: 9999px;
+    padding: 5% 7%;
+}
+
+#downUrl:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#downUrl li:hover{
+    color: #0480a279;
+}
+
+
+/* ページトップ */
+#pageTOP{
+    clear: left;
+    height: 95vh;
+    width: 100%;
+    padding-top: 8%;
+}
+
+video{
+    float: left;
+    padding: 0% 3% 4% 8%;
+    width: 50%;
+}
+
+#catchCopy{
+    padding-top: 1%;
+    width: 45%;
+}
+
+#downloadBtn{
+    color: black;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 9999px;
+    width: fit-content;
+    padding: 1%;
+    margin-left: 65%;
+    text-decoration: none;
+}
+
+#downloadBtn:hover{
+    color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+#downloadBtn:visited{
+    color: black;
+}
+
+
+/*スクロール*/
+#scroll{
+    clear: left;
+    position:absolute;
+    bottom:1%;
+    right:50%;
+    /*矢印の動き1秒かけて永遠にループ*/
+    animation: arrowmove 1s ease-in-out infinite;
+}
+
+/*下からの距離が変化して全体が下→上→下に動く*/
+@keyframes arrowmove{
+      0%{bottom:7%;}
+      50%{bottom:9%;}
+     100%{bottom:7%;}
+ }
+
+/*Scrollテキストの描写*/
+#scroll span{
+    /*描画位置*/
+    position: absolute;
+    left:-5px;
+    bottom:10px;
+    color: rgb(255, 255, 255);
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    /*縦書き設定*/
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    margin: 0;
+    width: 100%;
+}
+
+/* 矢印の描写 */
+#scroll:before {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    bottom: 0;
+    right: -6px;
+    /*矢印の形状*/
+    width: 1px;
+    height: 20px;
+    background: rgb(255, 254, 254);
+    transform: skewX(-31deg);
+}
+
+#scroll:after{
+    content:"";
+    /*描画位置*/
+    position: absolute;
+    bottom:0;
+    right:0;
+    /*矢印の形状*/
+    width:1px;
+    height: 50px;
+    background:rgb(255, 255, 255);
+}
+
+
+/* スライドショー */
+.slider {
+    width:90%;
+    margin:0 auto;
+}
+
+.slider img {
+    width:40vw;
+    height:auto;
+}
+
+.slider .slick-slide {
+    transform: scale(0.8);/*左右の画像のサイズを80%に*/
+    transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
+    opacity: 0.5;/*透過50%*/
+}
+
+.slider .slick-slide.slick-center{
+    transform: scale(1);/*中央の画像のサイズだけ等倍に*/
+    opacity: 1;/*透過なし*/
+}
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 42%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #666;/*矢印の色*/
+    border-right: 2px solid #666;/*矢印の色*/
+    height: 15px;
+    width: 15px;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+    left: -1.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+    right: -1.5%;
+    transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+    text-align:center;
+    margin:20px 0 0 0;
+}
+
+.slick-dots li {
+    display:inline-block;
+    margin:0 1%;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;/*ドットボタンのサイズ*/
+    height:8px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:50%;
+    background:#ccc;/*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button{
+    background:#333;/*ドットボタンの現在地表示の色*/
+}
+
+
+/* 概要 */
+.present{
+    width: 70%;
+    margin: 5% 5% 0 10%;
+    display: inline-flex;
+}
+
+.future{
+    width: 70%;
+    margin: 0 5% 5% 10%;
+    display: inline-flex;
+}
+
+.presentText, .futureText{
+    margin-top: 2%;
+    width: 40%;
+}
+
+.mainText{
+    line-height: 200%;
+    padding-top: 5%;
+    font-size: large;
+    color: rgb(40, 40, 40);
+}
+
+.present > img, .future > img, .usingTextline > img{
+    width: 60%;
+}
+
+.sita{
+    height: 15vh;
+    margin: 1% auto;
+}
+
+
+/* システムの使い方 */
+#using{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#using h2{
+    margin-bottom: 2%;
+}
+
+.step{
+    margin-left: -5%;
+    margin-bottom: 3%;
+    color: #0481A2;
+}
+
+.usingTextline{
+    display: inline-flex;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.usingTextline img{
+    width: 60%;
+}
+
+.usingText{
+    width: 40%;
+    padding: 0 5%;
+}
+
+hr{
+    width: 80%;
+    height: 3px;
+    background-color: #ccc;
+    margin: 5% auto 3% auto;
+}
+
+
+/* フッター */
+footer{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footerText1, .footerText2, .footerText3{
+    border-right: thin solid #ccc;
+    margin-bottom: 5%;
+    width: 20%;
+}
+
+footer ul{
+    margin: 0 12%;
+}
+
+footer li{
+    list-style: none;
+}
+
+footer a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+.footer{
+    display: inline-flex;
+    width: 100%;
+}
