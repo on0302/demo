@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>HOME</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/demo.css">
+</head>
+<body>
+    <header id="header">
+        <div class="logTitle">
+            <img src="./img/chara1_onColor.png" alt="ロゴ" id="logImg">
+            <a href="#"  id="titleText"><p><span>B</span>rain<span>B</span>ook<span>M</span>ark</p></a>
+        </div>
+        <nav>
+            <ul id="navList">
+                <li id="now"><a class="navText" href="index.html">HOME</a></li>
+                <li><a class="navText" href="demo.html">デモ機能の使い方</a></li>
+                <li><a class="navText" href="member.html">メンバー</a></li>
+                <a id="downUrl" href="./zip/bbm.zip" download="bbk.zip"><li>ダウンロード</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="index">
+            <h2>目次</h2>
+            <ul>
+                <li><a href="#content1">1. デモ機能概要</a></li>
+                <li><a href="#content2">2. 拡張機能ダウンロード</a></li>
+                <li><a href="#content3">3. 拡張機能セットアップ</a></li>
+                <li><a href="#content4">4. 実際に使用する</a></li>
+            </ul>
+        </div>
+        <div class="content1" id="content1">
+            <h2>デモ機能概要</h2>
+            <p>GoogleChoromeの拡張機能を用いて、顔認識とマウスの位置取得で悩んでいる内容を取得することに成功しました。</p>
+        </div>
+        <div class="content2" id="content2">
+            <h2>拡張機能ダウンロード</h2>
+            <p>サイトの<strong>「ダウンロード」</strong>をクリックし、<strong>「bbm」</strong>をダウンロードしておきます。</p>
+            <img src="img/download.png" alt="サイトトップ">
+        </div>
+        <div class="content3" id="content3">
+            <h2>拡張機能セットアップ</h2>
+            <p>はじめにGoogleChromeの設定画面を開きます。</p>
+            <img src="img/top.png" alt="設定画面">
+            <p>次に<strong>「拡張機能」</strong>をクリックします。</p>
+            <img src="img/setting.png" alt="設定画面">
+            <p>デベロッパーモードがオンになっているのを確認し、<strong>「パッケージ化されていない拡張機能を読み込む」</strong>をクリックします。サイトからダウンロードした「bbm」を選択します。</p>
+            <img src="img/ex.png" alt="拡張１">
+            <p>拡張機能に追加されました。</p>
+            <img src="img/ex2.png" alt="拡張２">
+        </div>
+        <div class="content4">
+            <h2 id="content4">実際に使用する</h2>
+            <p>wikipediaで今回のシステムを試用してみます。顔の表情認識で悩んでいるかを判定します。マウスの位置を見ている視点とし、悩んでいる内容を判別します。</p>
+            <img src="img/use.png" alt="悩んでいる">
+            <p>システムが学習した内容から検索候補を表示します。</p>
+            <img src="img/cand.png" alt="検索候補">
+            <p>検索候補をクリックするとその内容が表示されます。</p>
+            <img src="img/result.png" alt="結果">
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <div class="footer">
+            <div class="footerText1">
+                <ul>
+                    <li>
+                        <a href="#pageTOP">TOP</a>
+                    </li>
+                    <li>
+                        <a href="#desc">システム概要</a>
+                    </li>
+                    <li>
+                        <a href="#using">使い方</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footerText2">
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="demo.html">デモ機能の使い方</a>
+                    </li>
+                    <li>
+                        <a href="member.html">メンバー</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footerText3">
+                <ul>
+                    <li>
+                        <a href="#">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/mouse.js"></script>
+</body>
+</html>

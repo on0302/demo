@@ -1,0 +1,36 @@
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 4rem;
+    border: thin solid #be3455;
+    border-radius: 30px;
+}
+main div {
+    margin-bottom: 3rem;
+}
+h2 {
+    border-bottom: solid 1px #be3455;
+    color: #661528;
+    font-weight: lighter;
+    font-size: 2rem;
+    padding-top: 180px;
+    margin-top:-180px;
+    margin-bottom: 1rem;
+}
+p {
+    font-size: 1rem;
+    color: #661528;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+.index a{
+    color: #6495ed;
+    text-decoration: underline;
+}
+.index li {
+    padding: 0.5rem;
+}
+.index a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
