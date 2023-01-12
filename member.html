@@ -8,6 +8,7 @@
     <title>HOME</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/member.css">
 </head>
 <body>
     <header id="header">
@@ -15,34 +16,94 @@
             <img src="./img/chara1_onColor.png" alt="ロゴ" id="logImg">
             <a href="#"  id="titleText"><p><span>B</span>rain<span>B</span>ook<span>M</span>ark</p></a>
         </div>
-        <nav>
+        <nav id="nav_wrap">
+            <img id = "openbtn" class="menu_open" src="./img/ham-menu-image01.png">
+            <img id = "closebtn" class="menu_close" src="./img/ham-menu-image02.png">
             <ul id="navList">
-                <li id="now"><a class="navText" href="index.html">HOME</a></li>
+                <li><a class="navText" href="index.html">HOME</a></li>
                 <li><a class="navText" href="demo.html">デモ機能の使い方</a></li>
-                <li><a class="navText" href="member.html">メンバー</a></li>
-                <a id="downUrl" href="./zip/bbm.zip" download="bbk.zip"><li>ダウンロード</li></a>
+                <li id="now"><a class="navText" href="member.html">メンバー</a></li>
+                <li><a id="downUrl" href="./zip/th457bbm.zip" download="th457bbm.zip">ダウンロード</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        メンバー
+        <h2 class="title"><span>MEMBER</span></h2>
+
+        <div class="content_wrap">
+            <p class="wrap_title">システム開発</p>
+        
+            <div class="content fade">
+                <h3>新井良規</h3>
+                <p class="job">AI・キャラクター導入</p>
+                <p class="classroom">IH14A083</p>
+                <p class="comment">バグ修正が大変でしたが、マスコットキャラクターへの愛♡で乗り越えました。</p>
+            </div>
+
+            <div class="content fade">
+                <h3>上田浩太</h3>
+                <p class="job">文字解析</p>
+                <p class="classroom">IH14A083</p>
+                <p class="comment">AIを用いて日本語解析等を行いブラウザ上での文字の処理などを担当しました、マウスの位置情報を使って目線や脳波の代用となっています。興味があれば試していただけると嬉しいです。</p>
+            </div>
+
+            <div class="content fade">
+                <h3>加藤昭一郎</h3>
+                <p class="job">リーダー・全体管理</p>
+                <p class="classroom">IS14A083</p>
+                <p class="comment">AI、WEBカメラを使ってデータ処理やキャラクター表示など、学校で学んだ事＋αの技術を組み合わせる事で勉強になる事ばかりでした。特にChrome拡張としてダウンロードできる機能にまとめた事等、様々なユーザーに楽しんでもらえるようチームで工夫を凝らしました。是非、このアプリで遊んでみてください。</p>
+            </div>
+
+            <div class="content fade">
+                <h3>小暮輝</h3>
+                <p class="job">表情・傾き検知</p>
+                <p class="classroom">IH14A083</p>
+                <p class="comment">初めて挑戦することばかりで戸惑いましたが楽しかったです。特にWEBカメラを利用して表情や傾きの検知＋カメラをブラウザで操作する部分をChromeの拡張機能として組み込むのは大変でした。ダウンロードしてためしてみてください。</p>
+            </div>
+        </div>
+
+        <div class="content_wrap">
+            <p class = "wrap_title">WEB制作</p>
+
+            <div class="content fade">
+                <h3>秋山直輝</h3>
+                <p class="job">データモデル・WEB制作</p>
+                <p class="classroom">IH14A083</p>
+                <p class="comment">頑張りました＾＾</p>
+            </div>
+        
+            <div class="content fade">
+                <h3>折田直彦</h3>
+                <p class="job">Azure環境構築</p>
+                <p class="classroom">IH14A083</p>
+                <p class="comment">環境を構築する上で最も適切なものを決めることやさまざまな問題点を解決することが楽しかったです。</p>
+            </div>
+        
+            <div class="content fade">
+                <h3>神蔵大嘉</h3>
+                <p class="job">WEB制作・デザイン</p>
+                <p class="classroom">IH14A083</p>
+                <p class="comment">Live2Dを扱っていたのでVtuberを作れるようになりました。私はIT学科ですが、コードはほぼ書くことはありませんでした。ですが、今作を作れたこと、携われたことはうれしく思っています。新しいことばかりでしたので楽しかったです。</p>
+            </div>
+        
+            <div class="content fade">
+                <h3>坂田茉朋</h3>
+                <p class="job">デザイン</p>
+                <p class="classroom">IW14A083</p>
+                <p class="comment">制作を通じて、デザインに対する理解が深まりました。</p>
+            </div>
+
+            <div class="content fade">
+                <h3>友利譲司</h3>
+                <p class="job">動画作成</p>
+                <p class="classroom">IH14A083</p>
+                <p class="comment">初めて動画編集をしましたが、テレビやyoutubeの編集をしている人たちの凄さを感じました。</p>
+            </div>
+        </div>
     </main>
     <hr>
     <footer>
         <div class="footer">
-            <div class="footerText1">
-                <ul>
-                    <li>
-                        <a href="#pageTOP">TOP</a>
-                    </li>
-                    <li>
-                        <a href="#desc">システム概要</a>
-                    </li>
-                    <li>
-                        <a href="#using">使い方</a>
-                    </li>
-                </ul>
-            </div>
             <div class="footerText2">
                 <ul>
                     <li>
@@ -56,18 +117,36 @@
                     </li>
                 </ul>
             </div>
-            <div class="footerText3">
-                <ul>
-                    <li>
-                        <a href="#">Instagram</a>
-                    </li>
-                </ul>
-            </div>
+            
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/mouse.js"></script>
+    <script src="./js/menu.js"></script>
+    <!-- <script>
+        const CLASSNAME = "-visible";
+        const TIMEOUT = 1500;
+        const DELAY = 100;
+        const $target1 = $(".title");
+        const $target2 = $(".sentence");
+
+        setInterval(() => {
+        $target1.addClass(CLASSNAME);
+        setTimeout(() => {
+            $target2.addClass(CLASSNAME);
+        }, DELAY);
+
+        setTimeout(() => {
+            $target1.removeClass(CLASSNAME);
+            setTimeout(() => {
+            $target2.removeClass(CLASSNAME);
+            }, DELAY);
+        }, TIMEOUT);
+        }, TIMEOUT * 2);
+    </script> -->
+
+    
 </body>
 </html>

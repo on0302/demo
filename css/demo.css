@@ -9,15 +9,17 @@ main div {
     margin-bottom: 3rem;
 }
 h2 {
-    border-bottom: solid 1px #be3455;
     color: #661528;
     font-weight: lighter;
     font-size: 2rem;
     padding-top: 180px;
     margin-top:-180px;
     margin-bottom: 1rem;
+    border-bottom: solid 1px #be3455;
 }
-p {
+
+
+main p {
     font-size: 1rem;
     color: #661528;
     margin-top: 2.5rem;
@@ -33,4 +35,12 @@ p {
 .index a:hover{
     text-decoration: none;
     cursor: pointer;
+}
+
+.fade{
+    animation: fadeIn 1s ease 0.3s 1 normal;
+}
+@keyframes fadeIn { /*animation-nameで設定した値を書く*/
+    0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+    100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
 }

@@ -15,29 +15,34 @@
             <img src="./img/chara1_onColor.png" alt="ロゴ" id="logImg">
             <a href="#"  id="titleText"><p><span>B</span>rain<span>B</span>ook<span>M</span>ark</p></a>
         </div>
-        <nav>
+        
+
+        <nav id="nav_wrap">
+            <img id = "openbtn" class="menu_open" src="./img/ham-menu-image01.png">
+            <img id = "closebtn" class="menu_close" src="./img/ham-menu-image02.png">
             <ul id="navList">
                 <li id="now"><a class="navText" href="index.html">HOME</a></li>
                 <li><a class="navText" href="demo.html">デモ機能の使い方</a></li>
                 <li><a class="navText" href="member.html">メンバー</a></li>
-                <a id="downUrl" href="./zip/bbm.zip" download="bbk.zip"><li>ダウンロード</li></a>
+                <li><a id="downUrl" href="./zip/th457bbm.zip" download="th457bbm.zip">ダウンロード</a></li>
             </ul>
         </nav>
     </header>
+       
     <main>
         <div id="pageTOP">
-            <video src="./video/TH45x.mp4" muted controls autoplay playsinline loop></video>
+            <video src="./video/TH457.mp4" muted controls autoplay playsinline loop></video>
             <img src="./img/topText.png" alt="キャッチコピー" id="catchCopy">
-            <a href="./zip/bbm.zip" download="bbk.zip" id="downloadBtn">DOWNLOAD</a>
+            <a href="./zip/th457bbm.zip" download="th457bbm.zip" id="downloadBtn">DOWNLOAD</a>
         </div>
         <div id="scroll">
             <span>Scroll</span>
         </div>
         <ul class="slider">
-            <li><img src="./img/サムネイル4.jpg" alt="すらいど1"></li>
-            <li><img src="./img/なるほど.png" alt="すらいど2"></li>
-            <li><img src="./img/sirede02.png" alt="すらいど3"></li>
-            <li><img src="./img/sreide03.png" alt="すらいど4"></li>
+            <li><img src="./img/pias.jpg" alt="すらいど1"></li>
+            <li><img src="./img/サムネイル4.jpg" alt="すらいど2"></li>
+            <li><img src="./img/sreide03.png" alt="すらいど3"></li>
+            <li><img src="./img/なるほど.png" alt="すらいど4"></li>
         </ul>
         <div id="desc">
             <div class="present">
@@ -107,19 +112,6 @@
     <hr>
     <footer>
         <div class="footer">
-            <div class="footerText1">
-                <ul>
-                    <li>
-                        <a href="#pageTOP">TOP</a>
-                    </li>
-                    <li>
-                        <a href="#desc">システム概要</a>
-                    </li>
-                    <li>
-                        <a href="#using">使い方</a>
-                    </li>
-                </ul>
-            </div>
             <div class="footerText2">
                 <ul>
                     <li>
@@ -133,18 +125,15 @@
                     </li>
                 </ul>
             </div>
-            <div class="footerText3">
-                <ul>
-                    <li>
-                        <a href="#">Instagram</a>
-                    </li>
-                </ul>
-            </div>
+           
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/mouse.js"></script>
+
+    <script src="./js/menu.js"></script>
+
 </body>
 </html>
