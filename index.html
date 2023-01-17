@@ -4,136 +4,174 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
     <title>HOME</title>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"> -->
     <link rel="stylesheet" href="./css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <header id="header">
-        <div class="logTitle">
-            <img src="./img/chara1_onColor.png" alt="ロゴ" id="logImg">
-            <a href="#"  id="titleText"><p><span>B</span>rain<span>B</span>ook<span>M</span>ark</p></a>
-        </div>
-        
-
-        <nav id="nav_wrap">
-            <img id = "openbtn" class="menu_open" src="./img/ham-menu-image01.png">
-            <img id = "closebtn" class="menu_close" src="./img/ham-menu-image02.png">
-            <ul id="navList">
-                <li id="now"><a class="navText" href="index.html">HOME</a></li>
-                <li><a class="navText" href="demo.html">デモ機能の使い方</a></li>
-                <li><a class="navText" href="member.html">メンバー</a></li>
-                <li><a id="downUrl" href="download_count/download.php?download=1">ダウンロード</a></li>
+    <div class="bg-light">
+    <!-- ヘッダーエリア -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light header">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt="ロゴ" id="logImg" width="270" class="d-inline-block align-text-top logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="demo.html">デモ機能の使い方</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="member.html">メンバー</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-danger me-2 dwnbtn" href="./zip/th457bbm.zip" download="th457bbm.zip">ダウンロード</a>
+              </li>
             </ul>
-        </nav>
-    </header>
-       
-    <main>
-        <div id="pageTOP">
-            <video src="./video/TH457.mp4" muted controls autoplay playsinline loop></video>
-            <img src="./img/topText.png" alt="キャッチコピー" id="catchCopy">
-            <a href="download_count/download.php?download=1" id="downloadBtn">DOWNLOAD</a>
+          </div>
         </div>
-        <div id="scroll">
-            <span>Scroll</span>
-        </div>
-        <ul class="slider">
-            <li><img src="./img/pias.jpg" alt="すらいど1"></li>
-            <li><img src="./img/サムネイル4.jpg" alt="すらいど2"></li>
-            <li><img src="./img/sreide03.png" alt="すらいど3"></li>
-            <li><img src="./img/なるほど.png" alt="すらいど4"></li>
-        </ul>
-        <div id="desc">
-            <div class="present">
-                <div class="presentText">
-                    <h2>検索してる時間って<br>もったいなく感じませんか？</h2>
-                    <p class="mainText">
-                        「悩む」や「検索する」、「サイトを選ぶ」など<br>
-                        そういう時間ってもったいないと感じませんか？
-                    </p>
-                </div>
-                <img src="./img/01.png" alt="イラスト">
+    </nav>
+    <!-- メインビジュアル -->
+    <div class="container mainvisual">
+        <div class="row d-flex justify-content-center">
+            <div class="col mt-5">
+                <video src="./video/TH457.mp4" muted controls autoplay playsinline loop class="mw-100"></video>
             </div>
-            <img src="./img/sita.png" alt="" class="sita">
-            <div class="future">
-                <div class="futureText">
-                    <h2>悩んで即検索はナンセンスの時代へ</h2>
-                    <p class="mainText">
-                        「検索する」や「サイトを選ぶ」などの時間が無くなり<br>
-                        今後それらは不要な時間となります
-                    </p>    
-                </div>
-                <img src="./img/02.png" alt="イラスト">
+            <div class="col text-center mt-5 main_text">
+                <h2 class="fw-bolder">思い出す手間を勝手にやってくれる・サポートする。</h2>
+                <p class="fw-bolder">という言葉をコンセプトに本機能を作成いたしました。</p>
+                <p class="fw-bolder">ピアス型デバイスから脳波を読み取り。悩んでいるかを検知。</p>
+                <p class="fw-bolder">悩んでも「この間のアレなんだっけ？」を思い出すかのように教えます。</p>
+                <p class="fw-bolder">数年後はそうなっているのではないかという考察とともに、</p>
+                <p class="fw-bolder text-danger">今回はそれらの機能の一部をデモ版として再現しました。</p>
+                <a class="btn btn-danger mt-5" href="./zip/th457bbm.zip" download="th457bbm.zip">ダウンロード</a>
             </div>
         </div>
-        <div id="using">
-            <h2>システムの使い方</h2>
-            <div class="usingTextline">
-                <div class="usingText">
-                    <p class="step">step1</p>
-                    <h2>1.ピアス型のデバイスを付けます</h2>
-                    <p class="mainText">
-                        先ずはピアス型のデバイスを付けてください<br>
-                        デバイスを日常的に付けることで<br>
-                        このシステムは真価を発揮します
-                    </p>
-                </div>
-                    <img src="./img/付ける.png" alt="ピアスを付ける">
+    </div>
+    <!-- スライドショー -->
+    <div id="carouselExampleIndicators" class="carousel slide slidearea carousel-dark" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/slide1.jpg" class="d-block w-100" alt="...">
             </div>
-            <img src="./img/hidarisita.png" alt="" class="sita">
-            <div class="usingTextline">
-                <img src="./img/受ける.png" alt="">
-                <div class="usingText">
-                    <p class="step">step2</p>
-                    <h2>2.授業などを受ける</h2>
-                    <p class="mainText">
-                        ピアスを付けたまま授業を受けたり<br>
-                        日々の勉強を行うことでどんどん<br>
-                        デバイス内に辞書として登録されていきます
-                    </p>
-                </div>
+            <div class="carousel-item">
+                <img src="./img/slide2.jpg" class="d-block w-100" alt="...">
             </div>
-            <img src="./img/migisita.png" alt="" class="sita">
-            <div class="usingTextline">
-                <div class="usingText">
-                    <p class="step">step3</p>
-                    <h2>3.悩みを検知して答えを教えます</h2>
-                    <p class="mainText">
-                        脳波から悩んでいることをデバイスが検知し<br>
-                        事前に登録した辞書から答えを導きだします<br>
-                        そうして答えを思い出すかのようにデバイスが教えます
-                    </p>
-                </div>
-                    <img src="./img/悩み.png" alt="">
+            <div class="carousel-item">
+                <img src="./img/slide3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/slide4.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
-    </main>
-    <hr>
-    <footer>
-        <div class="footer">
-            <div class="footerText2">
-                <ul>
-                    <li>
-                        <a href="index.html">HOME</a>
-                    </li>
-                    <li>
-                        <a href="demo.html">デモ機能の使い方</a>
-                    </li>
-                    <li>
-                        <a href="member.html">メンバー</a>
-                    </li>
-                </ul>
-            </div>
-           
-        </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/mouse.js"></script>
-    <script src="./js/menu.js"></script>
-    <script type="text/javascript" src="download_count/download.php?dsp_count=1"></script>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
+    <!-- 機能説明 -->
+    <div class="container descarea border-top border-bottom border-danger">
+        <div class="row w-70">
+            <div class="col-sm-4 text-center py-5">
+                <h2>検索している時間って<br>もったいなく感じませんか？</h2>
+                <p>「悩む」や「検索する」、「サイトを選ぶ」などそういう時間ってもったいないと感じませんか？</p>
+            </div>
+            <div class="col-sm-8">
+                <img src="./img/01.png" alt="説明０１" class="img-fluid">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <img src="./img/sita.png" alt="やじるし" id="arrow_img">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-sm-4 text-center py-5">
+                <h2>悩んで即検索は<br>ナンセンスの時代へ</h2>
+                <p>「検索する」や「サイトを選ぶ」などの時間が無くなり今後それらは不要な時間となります</p>
+            </div>
+            <div class="col-sm-8">
+                <img src="./img/02.png" alt="説明０２" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <!-- システムの使い方 -->
+    <div class="container howto">
+        <h1 class="text-center">システムの使い方</h1>
+        <div class="row mt-4">
+            <div class="col p-5">
+                <p class="text-primary">step1</p>
+                <h2>ピアス型のデバイスをつけます</h2>
+                <p>先ずはピアス型のデバイスを付けてください<br>デバイスを日常的に付けることでこのシステムは真価を発揮します</p>
+            </div>
+            <div class="col">
+                <img src="./img/付ける.png" alt="装着" class="img-fluid">
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col d-flex justify-content-center">
+                <img src="./img/hidarisita.png" alt="矢印" class="diag">
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col">
+                <img src="./img/受ける.png" alt="授業" class="img-fluid">
+            </div>
+            <div class="col p-5">
+                <p class="text-primary">step2</p>
+                <h2>2.授業などを受ける</h2>
+                <p>ピアスを付けたまま授業を受けたり日々の勉強を行うことでどんどんデバイス内に辞書として登録されていきます</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col d-flex justify-content-center">
+                <img src="./img/migisita.png" alt="矢印" class="diag">
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col p-5">
+                <p class="text-primary">step3</p>
+                <h2>3.悩みを検知して答えを教えます</h2>
+                <p>脳波から悩んでいることをデバイスが検知し事前に登録した辞書から答えを導きだします<br>そうして答えを思い出すかのようにデバイスが教えます</p>
+            </div>
+            <div class="col">
+                <img src="./img/悩み.png" alt="悩み" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <!-- フッター部分 -->
+    <div class="container-fluid">
+        <footer class="py-3 my-4 bg-light">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted active">HOME</a></li>
+                <li class="nav-item"><a href="demo.html" class="nav-link px-2 text-muted">デモ機能の使い方</a></li>
+                <li class="nav-item"><a href="member.html" class="nav-link px-2 text-muted">メンバー</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2023 BrainBookMark</p>
+        </footer>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+    <!-- <script src="./js/mouse.js"></script>
+
+    <script src="./js/menu.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

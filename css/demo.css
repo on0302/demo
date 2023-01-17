@@ -1,46 +1,10 @@
-main {
-    width: 80%;
-    margin: 0 auto;
-    padding: 4rem;
-    border: thin solid #be3455;
-    border-radius: 30px;
+.container {
+    color: #be3455;
 }
-main div {
-    margin-bottom: 3rem;
+.container img {
+    min-width: 400px;
 }
-h2 {
-    color: #661528;
-    font-weight: lighter;
-    font-size: 2rem;
-    padding-top: 180px;
-    margin-top:-180px;
-    margin-bottom: 1rem;
-    border-bottom: solid 1px #be3455;
-}
-
-
-main p {
-    font-size: 1rem;
-    color: #661528;
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-}
-.index a{
-    color: #6495ed;
-    text-decoration: underline;
-}
-.index li {
-    padding: 0.5rem;
-}
-.index a:hover{
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.fade{
-    animation: fadeIn 1s ease 0.3s 1 normal;
-}
-@keyframes fadeIn { /*animation-nameで設定した値を書く*/
-    0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
-    100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+.btn-danger:hover {
+    background-color: white !important;
+    color: #dc3545 !important;
 }
