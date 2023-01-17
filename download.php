@@ -257,6 +257,7 @@ if ($_SESSION['auth'] !== TRUE) {
 <meta name="robots" content="noindex,nofollow" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- <script type="text/javascript" src="download_count/download.php?dsp_count=1"></script> -->
+<script type="text/javascript" src="download.php?dsp_count=1"></script>
 <title>ダウンロード履歴管理画面</title>
 </head>
 <style type="text/css">
