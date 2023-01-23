@@ -7,14 +7,16 @@
     <title>HOME</title>
     <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"> -->
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <script src="./js/aos.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
     <div class="bg-light">
     <!-- ヘッダーエリア -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light header">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt="ロゴ" id="logImg" width="270" class="d-inline-block align-text-top logo"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light header fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt="ロゴ" id="logImg" width="230" class="d-inline-block align-text-top logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -42,14 +44,14 @@
             <div class="col mt-5">
                 <video src="./video/TH457.mp4" muted controls autoplay playsinline loop class="mw-100"></video>
             </div>
-            <div class="col text-center mt-5 main_text">
+            <div class="col text-center mt-5 main_text" data-aos="fade-up">
                 <h2 class="fw-bolder">思い出す手間を勝手にやってくれる・サポートする。</h2>
                 <p class="fw-bolder">という言葉をコンセプトに本機能を作成いたしました。</p>
                 <p class="fw-bolder">ピアス型デバイスから脳波を読み取り。悩んでいるかを検知。</p>
                 <p class="fw-bolder">悩んでも「この間のアレなんだっけ？」を思い出すかのように教えます。</p>
                 <p class="fw-bolder">数年後はそうなっているのではないかという考察とともに、</p>
                 <p class="fw-bolder text-danger">今回はそれらの機能の一部をデモ版として再現しました。</p>
-                <a class="btn btn-danger mt-5" href="download.php?download=1" download="th457bbm.zip">ダウンロード</a>
+                <a class="btn btn-danger mt-5" href="download.php?download=1">ダウンロード</a>
             </div>
         </div>
     </div>
@@ -90,10 +92,10 @@
         <div class="row w-70">
             <div class="col-sm-4 text-center py-5">
                 <h2>検索している時間って<br>もったいなく感じませんか？</h2>
-                <p>「悩む」や「検索する」、「サイトを選ぶ」などそういう時間ってもったいないと感じませんか？</p>
+                <p class="text-secondary">「悩む」や「検索する」、「サイトを選ぶ」などそういう時間ってもったいないと感じませんか？</p>
             </div>
             <div class="col-sm-8">
-                <img src="./img/01.png" alt="説明０１" class="img-fluid">
+                <img src="./img/01.png" alt="説明０１" class="img-fluid" data-aos="zoom-in" data-aos-delay=400>
             </div>
         </div>
         <div class="row">
@@ -104,10 +106,10 @@
         <div class="row mt-3">
             <div class="col-sm-4 text-center py-5">
                 <h2>悩んで即検索は<br>ナンセンスの時代へ</h2>
-                <p>「検索する」や「サイトを選ぶ」などの時間が無くなり今後それらは不要な時間となります</p>
+                <p class="text-secondary">「検索する」や「サイトを選ぶ」などの時間が無くなり今後それらは不要な時間となります</p>
             </div>
             <div class="col-sm-8">
-                <img src="./img/02.png" alt="説明０２" class="img-fluid">
+                <img src="./img/02.png" alt="説明０２" class="img-fluid" data-aos="zoom-in" data-aos-delay=400>
             </div>
         </div>
     </div>
@@ -118,10 +120,10 @@
             <div class="col p-5">
                 <p class="text-primary">step1</p>
                 <h2>ピアス型のデバイスをつけます</h2>
-                <p>先ずはピアス型のデバイスを付けてください<br>デバイスを日常的に付けることでこのシステムは真価を発揮します</p>
+                <p class="text-secondary">先ずはピアス型のデバイスを付けてください<br>デバイスを日常的に付けることでこのシステムは真価を発揮します</p>
             </div>
             <div class="col">
-                <img src="./img/付ける.png" alt="装着" class="img-fluid">
+                <img src="./img/付ける.png" alt="装着" class="img-fluid" data-aos="zoom-in" data-aos-delay=400>
             </div>
         </div>
         <div class="row mt-4">
@@ -130,13 +132,13 @@
             </div>
         </div>
         <div class="row mt-4">
-            <div class="col">
-                <img src="./img/受ける.png" alt="授業" class="img-fluid">
-            </div>
-            <div class="col p-5">
+            <div class="col p-5 order-sm-2">
                 <p class="text-primary">step2</p>
                 <h2>2.授業などを受ける</h2>
-                <p>ピアスを付けたまま授業を受けたり日々の勉強を行うことでどんどんデバイス内に辞書として登録されていきます</p>
+                <p class="text-secondary">ピアスを付けたまま授業を受けたり日々の勉強を行うことでどんどんデバイス内に辞書として登録されていきます</p>
+            </div>
+            <div class="col order-sm-1">
+                <img src="./img/受ける.png" alt="授業" class="img-fluid" data-aos="zoom-in" data-aos-delay=400>
             </div>
         </div>
         <div class="row mt-4">
@@ -148,10 +150,10 @@
             <div class="col p-5">
                 <p class="text-primary">step3</p>
                 <h2>3.悩みを検知して答えを教えます</h2>
-                <p>脳波から悩んでいることをデバイスが検知し事前に登録した辞書から答えを導きだします<br>そうして答えを思い出すかのようにデバイスが教えます</p>
+                <p class="text-secondary">脳波から悩んでいることをデバイスが検知し事前に登録した辞書から答えを導きだします<br>そうして答えを思い出すかのようにデバイスが教えます</p>
             </div>
             <div class="col">
-                <img src="./img/悩み.png" alt="悩み" class="img-fluid">
+                <img src="./img/悩み.png" alt="悩み" class="img-fluid" data-aos="zoom-in" data-aos-delay=400>
             </div>
         </div>
     </div>
@@ -168,9 +170,12 @@
     </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="./js/index.js"></script>
-    <!-- <script src="./js/mouse.js"></script> -->
-    <!-- <script src="./js/menu.js"></script> -->
+    <!-- <script src="./js/mouse.js"></script>
+
+    <script src="./js/menu.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

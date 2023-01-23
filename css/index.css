@@ -1,20 +1,20 @@
 .mainvisual {
-    padding-top: 5rem;
+    padding-top: 12rem;
     padding-bottom: 14rem;
 }
 .mainvisual .col {
-    min-width: 400px;
+    min-width: 360px;
 }
 .slidearea {
     width: 70%;
-    min-width: 400px;
+    min-width: 360px;
     margin: 10rem auto;
 }
 .descarea {
     margin-top: 10rem;
 }
 .descarea .col {
-    min-width: 400px;
+    min-width: 360px;
 }
 #arrow_img {
     width: 30px;
@@ -26,7 +26,7 @@
     margin-top: 10rem;
 }
 .howto .col{
-    min-width: 400px;
+    min-width: 360px;
 }
 .btn-danger:hover {
     background-color: white !important;

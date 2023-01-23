@@ -8,3 +8,22 @@
     background-color: white !important;
     color: #dc3545 !important;
 }
+.descarea {
+    padding-top: 7rem;
+}
+#a {
+    padding-top: 7rem;
+    margin-top: -7rem;
+}
+#b {
+    padding-top: 7rem;
+    margin-top: -7rem;
+}
+#c {
+    padding-top: 7rem;
+    margin-top: -7rem;
+}
+#d {
+    padding-top: 7rem;
+    margin-top: -7rem;
+}
