@@ -1,15 +1,14 @@
-.container {
-    color: #be3455;
-}
-.container img {
-    min-width: 400px;
-}
 .btn-danger:hover {
     background-color: white !important;
     color: #dc3545 !important;
 }
 .descarea {
+    color: #be3455;
     padding-top: 7rem;
+    min-width: 340px;
+}
+.descarea img {
+    min-width: 300px;
 }
 #a {
     padding-top: 7rem;
